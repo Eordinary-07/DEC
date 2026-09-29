@@ -1,0 +1,950 @@
+[
+  {
+    "fig_id": "Figure 1.1",
+    "filename": "fig_prereq_ideal_pulses.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 35,
+    "printed_page": 3,
+    "caption": "Figure 1.1 Ideal positive and negative pulses.",
+    "size": [
+      1124,
+      313
+    ]
+  },
+  {
+    "fig_id": "Figure 1.2",
+    "filename": "fig_prereq_nonideal_pulse.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 35,
+    "printed_page": 3,
+    "caption": "Figure 1.2 Non-ideal pulse characteristics.",
+    "size": [
+      1141,
+      1261
+    ]
+  },
+  {
+    "fig_id": "FIgure 41",
+    "filename": "fig_prereq_ic_cutaway.png",
+    "book": "Thomas L. Floyd, Digital Fundamentals: A Systems Approach (1st Ed.)",
+    "pdf_page": 30,
+    "printed_page": 24,
+    "caption": "Figure 41 shows a cutaway view of one type of fixed-function IC package  with the circuit chip shown within the package. Points on the chip are connected to  the package pins to allow input and output connections to the outside world.",
+    "size": [
+      432,
+      654
+    ]
+  },
+  {
+    "fig_id": "FIgure 44",
+    "filename": "fig_prereq_ic_pin_numbering.png",
+    "book": "Thomas L. Floyd, Digital Fundamentals: A Systems Approach (1st Ed.)",
+    "pdf_page": 32,
+    "printed_page": 26,
+    "caption": "The PLCC and LCC packages have leads arranged on all four  sides. Pin 1 is indicated by a dot or other index mark and is located  at the center of one set of leads. The pin numbers increase going  counterclockwise as viewed from the top of the package. The high- est pin number is always to the right of pin 1. Figure 44(b) illus- trates this format for a 20-pin PLCC package.",
+    "size": [
+      584,
+      431
+    ]
+  },
+  {
+    "fig_id": "Figure 4.1",
+    "filename": "fig_u1_and_gate.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 164,
+    "printed_page": 132,
+    "caption": "Figure 4.1 A two-input AND gate.",
+    "size": [
+      893,
+      395
+    ]
+  },
+  {
+    "fig_id": "Figure 4.4",
+    "filename": "fig_u1_or_gate.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 166,
+    "printed_page": 134,
+    "caption": "Figure 4.4 A two-input OR gate.",
+    "size": [
+      998,
+      409
+    ]
+  },
+  {
+    "fig_id": "Figure 4.7",
+    "filename": "fig_u1_not_gate.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 168,
+    "printed_page": 136,
+    "caption": "Figure 4.7 The inverter.",
+    "size": [
+      1019,
+      439
+    ]
+  },
+  {
+    "fig_id": "Figure 4.8",
+    "filename": "fig_u1_nand_gate.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 169,
+    "printed_page": 137,
+    "caption": "Figure 4.8 A two-input NAND gate.",
+    "size": [
+      960,
+      421
+    ]
+  },
+  {
+    "fig_id": "Figure 4.14",
+    "filename": "fig_u1_nor_gate.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 171,
+    "printed_page": 139,
+    "caption": "Figure 4.14 A two-input NOR gate.",
+    "size": [
+      1111,
+      421
+    ]
+  },
+  {
+    "fig_id": "Figure 4.11",
+    "filename": "fig_u1_nand_inverter.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 170,
+    "printed_page": 138,
+    "caption": "Figure 4.11 NAND gate as an inverter.",
+    "size": [
+      1029,
+      665
+    ]
+  },
+  {
+    "fig_id": "Figure 4.17",
+    "filename": "fig_u1_nor_inverter.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 172,
+    "printed_page": 140,
+    "caption": "Figure 4.17 NOR gate as an inverter.",
+    "size": [
+      994,
+      804
+    ]
+  },
+  {
+    "fig_id": "Figure 4.20",
+    "filename": "fig_u1_xor_gate.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 173,
+    "printed_page": 141,
+    "caption": "Figure 4.20 Exclusive-OR gate.",
+    "size": [
+      1132,
+      1411
+    ]
+  },
+  {
+    "fig_id": "Figure 4.21",
+    "filename": "fig_u1_xnor_gate.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 175,
+    "printed_page": 143,
+    "caption": "Figure 4.21 Exclusive-NOR gate.",
+    "size": [
+      1081,
+      429
+    ]
+  },
+  {
+    "fig_id": "Figure 4.19",
+    "filename": "fig_u1_rtl_nor.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 173,
+    "printed_page": 141,
+    "caption": "Figure 4.19 Discrete two-input NOR gate.",
+    "size": [
+      795,
+      471
+    ]
+  },
+  {
+    "fig_id": "FIGURE 3.18",
+    "filename": "fig_u1_nand_implementation.png",
+    "book": "M. Morris Mano & Michael D. Ciletti, Digital Design (6th Global Ed.)",
+    "pdf_page": 120,
+    "printed_page": 119,
+    "caption": "FIGURE 3.18 Three ways to implement F \u2219AB \u2219CD",
+    "size": [
+      1085,
+      779
+    ]
+  },
+  {
+    "fig_id": "Figure 16.4",
+    "filename": "fig_u1_dc_noise_margins.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 896,
+    "printed_page": 864,
+    "caption": "Figure 16.4a shows the range of output voltages that can occur in a logic circuit. Voltages greater than VOH(min) are considered as a logic 1 and voltages lower than VOL(max) are considered as a logic 0. Voltages in the disallowed range should not appear at a logic circuit output under normal conditions. Figure 16.4b shows the input voltage requirements of a logic circuit. The logic circuit will respond to any input greater than VIH(min) as a logic 1 and to any input lower than VIL(max) as a logic 0. Voltages in the indeterminate range will produce an unpredictable response and should not be used.",
+    "size": [
+      1191,
+      300
+    ]
+  },
+  {
+    "fig_id": "Figure 16.5",
+    "filename": "fig_u1_ttl_nand_totem_pole.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 898,
+    "printed_page": 866,
+    "caption": "Figure 16.5 TTL NAND gate.",
+    "size": [
+      966,
+      1205
+    ]
+  },
+  {
+    "fig_id": "Figure 16.7",
+    "filename": "fig_u1_open_collector_ttl.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 904,
+    "printed_page": 872,
+    "caption": "Figure 16.7 Circuit diagram and logic symbol of open-collector inverter.",
+    "size": [
+      1181,
+      696
+    ]
+  },
+  {
+    "fig_id": "Figure 16.8",
+    "filename": "fig_u1_wired_and_ttl.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 905,
+    "printed_page": 873,
+    "caption": "Figure 16.8 ANDing of TTL gates.",
+    "size": [
+      1185,
+      429
+    ]
+  },
+  {
+    "fig_id": "Figure 16.9",
+    "filename": "fig_u1_tristate_ttl.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 905,
+    "printed_page": 873,
+    "caption": "Figure 16.9 Tri-state TTL inverter.",
+    "size": [
+      1188,
+      1594
+    ]
+  },
+  {
+    "fig_id": "Figure 16.23",
+    "filename": "fig_u1_cmos_inverter.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 921,
+    "printed_page": 889,
+    "caption": "Figure 16.23 shows a CMOS inverter and its equivalent circuits for different inputs. It consists of an NMOS transistor Q1 and a PMOS transistor Q2. The input is connected to the gates of both the devices and the output is at the drain of both the devices. The positive supply voltage is connected to the source of the PMOS transistor Q2, and the source of Q1 is grounded.",
+    "size": [
+      1191,
+      202
+    ]
+  },
+  {
+    "fig_id": "Figure 16.24",
+    "filename": "fig_u1_cmos_nand.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 922,
+    "printed_page": 890,
+    "caption": "Figure 16.24 shows a CMOS two-input NAND gate and its equivalent circuits for various input combinations. Here, Q1 and Q2 are parallel-connected PMOS transistors, and Q3 and Q4 are series-connected NMOS transistors.",
+    "size": [
+      1190,
+      160
+    ]
+  },
+  {
+    "fig_id": "Figure 16.25",
+    "filename": "fig_u1_cmos_nor.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 923,
+    "printed_page": 891,
+    "caption": "Figure 16.25 shows a CMOS two-input NOR gate and its equivalent circuits for various input combinations. Here, the NMOS transistors Q3 and Q4 are connected in parallel and the PMOS transistors Q1 and Q2 in series.",
+    "size": [
+      1190,
+      201
+    ]
+  },
+  {
+    "fig_id": "Figure 16.32",
+    "filename": "fig_u1_ttl_to_cmos.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 931,
+    "printed_page": 899,
+    "caption": "Figure 16.32 TTL to CMOS interfacing.",
+    "size": [
+      1162,
+      382
+    ]
+  },
+  {
+    "fig_id": "Figure 16.33",
+    "filename": "fig_u1_cmos_to_ttl.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 932,
+    "printed_page": 900,
+    "caption": "Figure 16.33 CMOS to TTL interfacing.",
+    "size": [
+      1025,
+      382
+    ]
+  },
+  {
+    "fig_id": "Figure 6.1",
+    "filename": "fig_u2_kmap_2var.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 265,
+    "printed_page": 233,
+    "caption": "Figure 6.1 The minterms of a two-variable K-map.",
+    "size": [
+      633,
+      270
+    ]
+  },
+  {
+    "fig_id": "Figure 6.4",
+    "filename": "fig_u2_kmap_2var_groupings.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 266,
+    "printed_page": 234,
+    "caption": "Figure 6.4 The possible minterm groupings in a two-variable K-map.",
+    "size": [
+      1118,
+      306
+    ]
+  },
+  {
+    "fig_id": "Figure 6.10",
+    "filename": "fig_u2_kmap_3var.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 269,
+    "printed_page": 237,
+    "caption": "Figure 6.10 The three-variable K-map.",
+    "size": [
+      1078,
+      1274
+    ]
+  },
+  {
+    "fig_id": "Figure 6.13",
+    "filename": "fig_u2_kmap_3var_groupings.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 272,
+    "printed_page": 240,
+    "caption": "Figure 6.13 Some possible combinations of minterms in a three-variable K-map (SOP form).",
+    "size": [
+      1116,
+      546
+    ]
+  },
+  {
+    "fig_id": "Figure 6.19",
+    "filename": "fig_u2_kmap_4var.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 276,
+    "printed_page": 244,
+    "caption": "Figure 6.19 The minterms and maxterms of a four-variable K-map.",
+    "size": [
+      1188,
+      1401
+    ]
+  },
+  {
+    "fig_id": "Figure 6.24",
+    "filename": "fig_u2_kmap_prime_implicants.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 281,
+    "printed_page": 249,
+    "caption": "Figure 6.24 Essential and redundant prime implicants.",
+    "size": [
+      681,
+      405
+    ]
+  },
+  {
+    "fig_id": "Figure 7.3",
+    "filename": "fig_u3_half_adder.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 359,
+    "printed_page": 327,
+    "caption": "Figure 7.3 Logic diagrams of half-adder.",
+    "size": [
+      863,
+      436
+    ]
+  },
+  {
+    "fig_id": "Figure 7.7",
+    "filename": "fig_u3_full_adder.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 361,
+    "printed_page": 329,
+    "caption": "Figure 7.7 Logic diagram of a full-adder using two half-adders.",
+    "size": [
+      806,
+      404
+    ]
+  },
+  {
+    "fig_id": "Figure 7.13",
+    "filename": "fig_u3_half_subtractor.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 364,
+    "printed_page": 332,
+    "caption": "Figure 7.13 Logic diagrams of a half-subtractor.",
+    "size": [
+      948,
+      316
+    ]
+  },
+  {
+    "fig_id": "Figure 7.17",
+    "filename": "fig_u3_full_subtractor.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 366,
+    "printed_page": 334,
+    "caption": "Figure 7.17 Logic diagram of a full-subtractor.",
+    "size": [
+      774,
+      430
+    ]
+  },
+  {
+    "fig_id": "Figure 7.20",
+    "filename": "fig_u3_parallel_adder.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 367,
+    "printed_page": 335,
+    "caption": "Figure 7.20 shows the interconnection of four full-adder (FA) circuits to provide a 4-bit parallel adder. The augend bits of A and addend bits of B are designated by subscript numbers from right to left, with subscript 1 denoting the lower-order bit. The carries are connected in a chain through the full-adders. The input carry to the adder is Cin and the output carry is C4. The S outputs generate the required sum bits. When the 4-bit full-adder circuit is enclosed within an IC package, it has four terminals for the augend bits, four terminals for the addend bits, four terminals",
+    "size": [
+      1195,
+      951
+    ]
+  },
+  {
+    "fig_id": "Figure 7.22",
+    "filename": "fig_u3_parallel_adder_subtractor.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 369,
+    "printed_page": 337,
+    "caption": "Figure 7.22 shows a 4-bit adder-subtractor circuit. Here the addition and subtraction operations are combined into one circuit with one common binary adder. This is done by including an X-OR gate with each full-adder. The mode input M controls the operation. When M = 0, the circuit is an adder, and when M = 1, the circuit becomes a subtractor. Each X-OR gate receives input M and one of the inputs of B. When M = 0, we have B \u2248 0 = B. The full-adder receives the value of B, the input carry is 0 and the circuit performs A + B. When M = 1, we have B \u2248 1 = B and C1 = 1. The B inputs are complemented and a 1 is added through the input carry. The circuit performs the operation A plus the 2\u2019s complement of B.",
+    "size": [
+      1191,
+      335
+    ]
+  },
+  {
+    "fig_id": "Figure 7.24",
+    "filename": "fig_u3_lookahead_carry_adder.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 371,
+    "printed_page": 339,
+    "caption": "Figure 7.24 Logic diagram of a 4-bit look-ahead-carry adder.",
+    "size": [
+      933,
+      966
+    ]
+  },
+  {
+    "fig_id": "Figure 7.32",
+    "filename": "fig_u3_binary_to_gray.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 383,
+    "printed_page": 351,
+    "caption": "Figure 7.32 4-bit binary-to-Gray code converter.",
+    "size": [
+      1135,
+      871
+    ]
+  },
+  {
+    "fig_id": "Figure 7.33",
+    "filename": "fig_u3_gray_to_binary.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 384,
+    "printed_page": 352,
+    "caption": "Figure 7.33 4-bit Gray-to-binary code converter.",
+    "size": [
+      862,
+      1385
+    ]
+  },
+  {
+    "fig_id": "Figure 7.35",
+    "filename": "fig_u3_bcd_to_xs3.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 387,
+    "printed_page": 355,
+    "caption": "Figure 7.35 4-bit BCD-to-XS-3 code converter.",
+    "size": [
+      888,
+      920
+    ]
+  },
+  {
+    "fig_id": "Figure 7.76",
+    "filename": "fig_u3_mux_2to1.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 422,
+    "printed_page": 390,
+    "caption": "Figure 7.76 2-input multiplexer.",
+    "size": [
+      962,
+      361
+    ]
+  },
+  {
+    "fig_id": "Figure 7.77",
+    "filename": "fig_u3_mux_4to1.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 422,
+    "printed_page": 390,
+    "caption": "Figure 7.77a shows the logic circuitry for a 4-input multiplexer with data inputs D0, D1, D2, and D3, and data select inputs S0 and S1. The logic levels applied to the S0 and S1 inputs determine which AND gate is enabled, so that its data input passes through the OR gate to the output. The function table in Figure 7.77b gives the output for the input select codes as",
+    "size": [
+      1190,
+      609
+    ]
+  },
+  {
+    "fig_id": "Figure 7.89",
+    "filename": "fig_u3_demux_1to4.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 431,
+    "printed_page": 399,
+    "caption": "Figure 7.89 1-line to 4-line demultiplexer.",
+    "size": [
+      1038,
+      513
+    ]
+  },
+  {
+    "fig_id": "Figure 7.69",
+    "filename": "fig_u3_decoder_3to8.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 415,
+    "printed_page": 383,
+    "caption": "Figure 7.69a shows the circuitry for a decoder with three inputs and eight outputs. It uses all AND gates, and therefore, the outputs are active-HIGH. For active-LOW outputs, NAND gates are used. The truth table of the decoder is shown in Figure 7.69b. This decoder can be referred to in several ways. It can be called a 3-line to 8-line decoder because it has three input lines and eight output lines. It is also called a binary-to-octal decoder because it takes a 3-bit binary input code and activates one of the eight (octal) outputs corresponding to that code. It is also referred to as a 1-of-8 decoder because only one of the eight outputs is activated at one time.",
+    "size": [
+      1191,
+      300
+    ]
+  },
+  {
+    "fig_id": "Figure 7.65",
+    "filename": "fig_u3_priority_encoder.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 411,
+    "printed_page": 379,
+    "caption": "Figure 7.65 4-bit priority encoder.",
+    "size": [
+      1156,
+      726
+    ]
+  },
+  {
+    "fig_id": "Figure 7.73",
+    "filename": "fig_u3_seven_segment_display.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 419,
+    "printed_page": 387,
+    "caption": "Figure 7.73a shows a seven-segment display consisting of seven light emitting segments. The segments are designated by letters a\u2013g as shown in the figure. By illuminating various combinations of segments as shown in Figure 7.73b, the numbers 0\u20139 can be displayed. Figures 7.73c and d show two types of LED display\u2014the common-anode and the common-cathode types.",
+    "size": [
+      1191,
+      223
+    ]
+  },
+  {
+    "fig_id": "Figure 7.74",
+    "filename": "fig_u3_bcd_to_7seg_decoder.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 420,
+    "printed_page": 388,
+    "caption": "Figure 7.74 BCD-to-seven segment decoder.",
+    "size": [
+      1156,
+      1016
+    ]
+  },
+  {
+    "fig_id": "Figure 10.1",
+    "filename": "fig_u4_sequential_block_diag.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 578,
+    "printed_page": 546,
+    "caption": "Figure 10.1 shows a block diagram of a sequential circuit. The memory elements are connected to the combinational circuit as a feedback path.",
+    "size": [
+      1191,
+      125
+    ]
+  },
+  {
+    "fig_id": "Figure 10.4",
+    "filename": "fig_u4_sr_latch_nor.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 582,
+    "printed_page": 550,
+    "caption": "Figure 10.4 Active-HIGH S-R latch.",
+    "size": [
+      995,
+      490
+    ]
+  },
+  {
+    "fig_id": "Figure 10.5",
+    "filename": "fig_u4_sr_latch_nand.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 583,
+    "printed_page": 551,
+    "caption": "Figure 10.5 An active-LOW S-R latch.",
+    "size": [
+      1046,
+      401
+    ]
+  },
+  {
+    "fig_id": "Figure 10.7",
+    "filename": "fig_u4_clocked_sr_latch.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 584,
+    "printed_page": 552,
+    "caption": "Figure 10.7 A gated S-R latch.",
+    "size": [
+      1107,
+      474
+    ]
+  },
+  {
+    "fig_id": "Figure 10.15",
+    "filename": "fig_u4_d_flipflop.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 589,
+    "printed_page": 557,
+    "caption": "Figure 10.15 The positive edge-triggered D flip-flop.",
+    "size": [
+      894,
+      1468
+    ]
+  },
+  {
+    "fig_id": "Figure 10.17",
+    "filename": "fig_u4_jk_flipflop.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 590,
+    "printed_page": 558,
+    "caption": "Figure 10.17 Positive edge-triggered J-K flip-flop.",
+    "size": [
+      885,
+      1195
+    ]
+  },
+  {
+    "fig_id": "Figure 10.20",
+    "filename": "fig_u4_t_flipflop.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 592,
+    "printed_page": 560,
+    "caption": "Figure 10.20 Edge-triggered T flip-flop.",
+    "size": [
+      1016,
+      1010
+    ]
+  },
+  {
+    "fig_id": "Figure 10.40",
+    "filename": "fig_u4_master_slave_jk.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 606,
+    "printed_page": 574,
+    "caption": "Figure 10.40 The master-slave J-K flip-flop.",
+    "size": [
+      1038,
+      856
+    ]
+  },
+  {
+    "fig_id": "Figure 10.44",
+    "filename": "fig_u4_ff_conversion_sr_to_jk.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 611,
+    "printed_page": 579,
+    "caption": "Figure 10.44 Conversion of S-R flip-flop to J-K flip-flop.",
+    "size": [
+      1121,
+      781
+    ]
+  },
+  {
+    "fig_id": "Figure 11.4",
+    "filename": "fig_u4_siso_register.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 640,
+    "printed_page": 608,
+    "caption": "Figure 11.4 4-bit serial-in, serial-out, shift-right, shift register.",
+    "size": [
+      1045,
+      280
+    ]
+  },
+  {
+    "fig_id": "Figure 11.7",
+    "filename": "fig_u4_sipo_register.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 641,
+    "printed_page": 609,
+    "caption": "Figure 11.7 shows the logic diagram and the logic symbol of a 4-bit serial-in, parallel-out, shift register. In this type of register, the data bits are entered into the register serially, but the data stored in the register is shifted out in parallel form.",
+    "size": [
+      1191,
+      160
+    ]
+  },
+  {
+    "fig_id": "Figure 11.8",
+    "filename": "fig_u4_piso_register.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 642,
+    "printed_page": 610,
+    "caption": "Figure 11.8 A 4-bit parallel-in, serial-out, shift register.",
+    "size": [
+      1054,
+      719
+    ]
+  },
+  {
+    "fig_id": "Figure 11.9",
+    "filename": "fig_u4_pipo_register.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 642,
+    "printed_page": 610,
+    "caption": "Figure 11.9 shows a 4-bit parallel-in, parallel-out, shift register using D FFs. Data is applied to the D input terminals of the FFs. When a clock pulse is applied, at the positive-going edge of that pulse, the D inputs are shifted into the Q outputs of the FFs. The register now stores the data. The stored data is available instantaneously for shifting out in parallel form.",
+    "size": [
+      1191,
+      1066
+    ]
+  },
+  {
+    "fig_id": "Figure 12.1",
+    "filename": "fig_u4_asynch_2bit_counter.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 665,
+    "printed_page": 633,
+    "caption": "Figure 12.1 Asynchronous 2-bit up-counter using negative edge-triggered flip-flops.",
+    "size": [
+      1086,
+      345
+    ]
+  },
+  {
+    "fig_id": "Figure 12.57",
+    "filename": "fig_u4_ring_counter.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 697,
+    "printed_page": 665,
+    "caption": "Figure 12.57 Logic diagram of a 4-bit ring counter using D flip-flops.",
+    "size": [
+      1007,
+      310
+    ]
+  },
+  {
+    "fig_id": "Figure 12.61",
+    "filename": "fig_u4_johnson_counter.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 698,
+    "printed_page": 666,
+    "caption": "Figure 12.61 Logic diagram of a 4-bit twisted ring counter using D flip-flops.",
+    "size": [
+      1056,
+      1217
+    ]
+  },
+  {
+    "fig_id": "FiGure 2",
+    "filename": "fig_u4_traffic_light_state_diagram.png",
+    "book": "Thomas L. Floyd, Digital Fundamentals: A Systems Approach (1st Ed.)",
+    "pdf_page": 323,
+    "printed_page": 317,
+    "caption": "state descriptions  A state diagram* is shown in Figure 2. Each of the four  states is assigned a 2-bit Gray code as indicated. A looping arrow means that the system  remains in a state, and an arrow between states means that the system transitions to the  next state. The Boolean expression or variable associated with each of the arrows in the  state diagram indicates the condition under which the system remains in a state or transi- tions to the next state.",
+    "size": [
+      889,
+      1237
+    ]
+  },
+  {
+    "fig_id": "FiGure 3",
+    "filename": "fig_u4_traffic_light_block_diagram.png",
+    "book": "Thomas L. Floyd, Digital Fundamentals: A Systems Approach (1st Ed.)",
+    "pdf_page": 324,
+    "printed_page": 318,
+    "caption": "The traffic signal control system consists of three parts: combinational logic, sequential  logic, and timing circuits, as shown in Figure 3.",
+    "size": [
+      1154,
+      765
+    ]
+  },
+  {
+    "fig_id": "Figure 17.5",
+    "filename": "fig_u5_r2r_ladder_dac.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 947,
+    "printed_page": 915,
+    "caption": "Figure 17.5 R-2R ladder type DAC.",
+    "size": [
+      992,
+      440
+    ]
+  },
+  {
+    "fig_id": "Figure 17.10",
+    "filename": "fig_u5_weighted_resistor_dac.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 951,
+    "printed_page": 919,
+    "caption": "Figure 17.10 Weighted-resistor type DAC.",
+    "size": [
+      893,
+      341
+    ]
+  },
+  {
+    "fig_id": "Figure 17.15",
+    "filename": "fig_u5_counter_type_adc.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 958,
+    "printed_page": 926,
+    "caption": "Figure 17.15 Logic diagram of the counter-type ADC.",
+    "size": [
+      1185,
+      656
+    ]
+  },
+  {
+    "fig_id": "Figure 17.23",
+    "filename": "fig_u5_dual_slope_adc.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 964,
+    "printed_page": 932,
+    "caption": "Figure 17.23 shows the functional block diagram of a dual-slope ADC. Assume that the counter is reset and the output of the integrator is zero. A conversion begins with the switch connected to the analog input. Assume that the input is a negative voltage and is constant for a period of time; so, the output of the integrator is a positive ramp. The ramp is allowed to continue for a fixed time and the voltage it reaches in that time is directly dependent on the analog input. The fixed time is controlled by sensing the time when the counter reaches a particular count. At that time, the counter is reset and the control circuitry causes the switch to be connected to a reference voltage EREF, having a polarity opposite to that of the analog input; in this case a positive reference voltage. Therefore, the output of the integrator is a negative going ramp, beginning from the positive value it reached during the first integration. The AND gate is enabled and the counter starts counting. When the ramp reaches 0 V, the voltage comparator switches to LOW, inhibiting the clock pulses and the counter stops counting. The binary count is latched, thus, completing one conversion. The count it contains at that time is proportional to the time required for the negative ramp to reach zero, which is proportional to the positive voltage reached during the first integration, which in turn is proportional to the analog input.",
+    "size": [
+      1191,
+      580
+    ]
+  },
+  {
+    "fig_id": "Figure 17.24",
+    "filename": "fig_u5_sar_adc.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 965,
+    "printed_page": 933,
+    "caption": "Figure 17.24 shows a basic block diagram of a 4-bit successive-approximation type ADC. It consists of a DAC, an output register, a comparator, and control circuitry or logic. The basic operation is as follows: The bits of the DAC are enabled one at a time, starting with the MSB. As each bit is enabled, the comparator produces an output that indicates whether the analog input voltage is greater or less than the output of the DAC VAX. If the D/A output is greater than the analog input, the comparator output is LOW, causing the bit in the control register to reset. If the D/A output is greater than the analog input, the comparator output is HIGH, and the bit is retained in the control register.",
+    "size": [
+      1191,
+      300
+    ]
+  },
+  {
+    "fig_id": "Figure 17.25",
+    "filename": "fig_u5_adc0801_pinout.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 967,
+    "printed_page": 935,
+    "caption": "Figure 17.25 Pin configuration of the ADC 0801.",
+    "size": [
+      870,
+      731
+    ]
+  },
+  {
+    "fig_id": "Figure 18.1",
+    "filename": "fig_u5_memory_organization.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 976,
+    "printed_page": 944,
+    "caption": "Figure 18.1 Diagram of a 32 \u00a5 4 memory and arrangement of memory cells.",
+    "size": [
+      1119,
+      639
+    ]
+  },
+  {
+    "fig_id": "Figure 18.5",
+    "filename": "fig_u5_sram_dram_cells.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 982,
+    "printed_page": 950,
+    "caption": "Figure 18.5 The bipolar, NMOS, and CMOS RAM cells.",
+    "size": [
+      772,
+      1295
+    ]
+  },
+  {
+    "fig_id": "Figure 18.7",
+    "filename": "fig_u5_memory_word_length_expansion.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 985,
+    "printed_page": 953,
+    "caption": "Figure 18.7 shows how two 16 \u00a5 4 memory RAM chips with common I/O lines are combined to produce a 16 \u00a5 8 memory. Since each chip can store 16 4-bit words and since 16 8-bit words are to be stored, each chip is used to store half of each word. In other words, RAM 0 stores the four higher order bits of each of the 16 words, and RAM 1 stores the four lower order bits of each of the 16 words. A full 8-bit word is available at the RAM outputs connected to the data bus.",
+    "size": [
+      1190,
+      233
+    ]
+  },
+  {
+    "fig_id": "Figure 18.9",
+    "filename": "fig_u5_memory_word_capacity_expansion.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 988,
+    "printed_page": 956,
+    "caption": "Figure 18.9 Combining two 16 \u00a5 4 chips for a 32 \u00a5 4 memory.",
+    "size": [
+      962,
+      840
+    ]
+  },
+  {
+    "fig_id": "Figure 8.7",
+    "filename": "fig_u5_pld_configurations.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 499,
+    "printed_page": 467,
+    "caption": "Figure 8.7 shows the configuration of the 3 PLDs. The programmable read-only memory (PROM) has a fixed AND array constructed as a decoder and a programmable OR array. The AND gates are programmed to provide the product terms for the Boolean functions, which are logically summed in each OR gate. The programmable array logic (PAL) has programmable AND",
+    "size": [
+      1190,
+      195
+    ]
+  },
+  {
+    "fig_id": "Figure 8.8",
+    "filename": "fig_u5_pal_structure.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 500,
+    "printed_page": 468,
+    "caption": "Figure 8.8 Basic structure of a PAL circuit, and implementation of F = A BC + ABC.",
+    "size": [
+      1188,
+      561
+    ]
+  },
+  {
+    "fig_id": "Figure 8.15",
+    "filename": "fig_u5_pla_structure.png",
+    "book": "A. Anand Kumar, Fundamentals of Digital Circuits (4th Ed.)",
+    "pdf_page": 508,
+    "printed_page": 476,
+    "caption": "Figure 8.15 Structure of (an unprogrammed) PLA circuit.",
+    "size": [
+      710,
+      1094
+    ]
+  }
+]
