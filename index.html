@@ -24,19 +24,19 @@
     code, pre {
       font-family: 'JetBrains Mono', monospace;
     }
-    .prose h1 { font-size: 2.25rem; font-weight: 800; margin-top: 2rem; margin-bottom: 1rem; color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
-    .prose h2 { font-size: 1.75rem; font-weight: 700; margin-top: 1.75rem; margin-bottom: 0.75rem; color: #0f172a; }
-    .prose h3 { font-size: 1.35rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1e293b; }
-    .prose h4 { font-size: 1.15rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; color: #334155; }
+    .prose h1 { font-size: 2.15rem; font-weight: 800; margin-top: 2rem; margin-bottom: 1rem; color: #1e293b; border-bottom: 2px solid #e2e8f0; padding-bottom: 0.5rem; }
+    .prose h2 { font-size: 1.65rem; font-weight: 700; margin-top: 1.75rem; margin-bottom: 0.75rem; color: #0f172a; }
+    .prose h3 { font-size: 1.30rem; font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1e293b; }
+    .prose h4 { font-size: 1.10rem; font-weight: 600; margin-top: 1.25rem; margin-bottom: 0.5rem; color: #334155; }
     .prose p { margin-top: 0.75rem; margin-bottom: 0.75rem; line-height: 1.75; color: #334155; }
     .prose ul, .prose ol { margin-top: 0.5rem; margin-bottom: 0.5rem; padding-left: 1.5rem; }
     .prose li { margin-top: 0.25rem; margin-bottom: 0.25rem; line-height: 1.6; }
-    .prose table { width: 100%; border-collapse: collapse; margin-top: 1rem; margin-bottom: 1rem; }
+    .prose table { width: 100%; border-collapse: collapse; margin-top: 1rem; margin-bottom: 1rem; font-size: 0.9em; }
     .prose th, .prose td { border: 1px solid #cbd5e1; padding: 0.5rem 0.75rem; text-align: left; }
     .prose th { background-color: #f1f5f9; font-weight: 600; }
     .prose blockquote { border-left: 4px solid #3b82f6; padding-left: 1rem; color: #475569; background: #eff6ff; padding-top: 0.5rem; padding-bottom: 0.5rem; border-radius: 0 0.375rem 0.375rem 0; margin-top: 1rem; margin-bottom: 1rem; }
     .prose figure { margin: 1.5rem auto; text-align: center; background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 0.5rem; padding: 1rem; }
-    .prose figure img { margin: 0 auto; border-radius: 0.375rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); max-width: 100%; height: auto; }
+    .prose figure img { margin: 0 auto; border-radius: 0.375rem; box-shadow: 0 1px 3px rgba(0,0,0,0.1); max-width: 100%; height: auto; cursor: zoom-in; }
     .prose figcaption { font-size: 0.875rem; color: #64748b; margin-top: 0.75rem; line-height: 1.4; text-align: left; }
     .prose pre { background: #0f172a; color: #f8fafc; padding: 1rem; border-radius: 0.5rem; overflow-x: auto; margin-top: 1rem; margin-bottom: 1rem; }
     .prose code { background: #f1f5f9; color: #0f172a; padding: 0.15rem 0.35rem; border-radius: 0.25rem; font-size: 0.9em; }
@@ -63,11 +63,21 @@
       <span class="bg-blue-600/30 text-blue-300 text-xs px-2 py-0.5 rounded border border-blue-500/30 font-mono">NEP-V</span>
     </div>
 
+    <!-- Mode Switcher -->
+    <div class="flex border-b border-slate-200 bg-slate-100 p-1 gap-1 text-xs font-semibold">
+      <button id="tabNotes" onclick="switchTab('notes')" class="flex-1 py-1.5 rounded bg-white text-blue-700 shadow-sm flex items-center justify-center gap-1.5 transition">
+        <i class="fa-solid fa-book-open"></i> Full Lecture
+      </button>
+      <button id="tabQuiz" onclick="switchTab('quiz')" class="flex-1 py-1.5 rounded text-slate-600 hover:text-slate-900 flex items-center justify-center gap-1.5 transition">
+        <i class="fa-solid fa-list-check"></i> Self-Quiz (25)
+      </button>
+    </div>
+
     <!-- Quick Search -->
-    <div class="p-3 border-b border-slate-100 bg-slate-50">
+    <div class="p-3 border-b border-slate-100 bg-slate-50" id="searchBoxContainer">
       <div class="relative">
         <i class="fa-solid fa-magnifying-glass absolute left-3 top-2.5 text-slate-400 text-xs"></i>
-        <input type="text" id="searchInput" placeholder="Search topics, terms, gates..." 
+        <input type="text" id="searchInput" placeholder="Search topics, formulas, ICs..." 
           class="w-full pl-8 pr-3 py-1.5 text-xs bg-white border border-slate-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 text-slate-800">
       </div>
     </div>
@@ -98,6 +108,9 @@
       <a href="#part-4-master-university-examination--numerical-problem-compendium" class="toc-link block px-3 py-2 rounded text-slate-700 hover:bg-slate-100 hover:text-blue-600">
         <i class="fa-solid fa-graduation-cap mr-2 text-amber-600"></i> Solved Exam Compendium
       </a>
+      <a href="#part-5-practical-digital-electronics-laboratory-manual--viva-voce-compendium" class="toc-link block px-3 py-2 rounded text-slate-700 hover:bg-slate-100 hover:text-blue-600">
+        <i class="fa-solid fa-flask-vial mr-2 text-teal-600"></i> Practical Lab Manual & Viva
+      </a>
       <a href="#appendix--master-reference-compendium" class="toc-link block px-3 py-2 rounded text-slate-700 hover:bg-slate-100 hover:text-blue-600">
         <i class="fa-solid fa-book-bookmark mr-2 text-slate-500"></i> Master Reference Cheat Sheet
       </a>
@@ -105,7 +118,7 @@
 
     <!-- Bottom Quick Stats -->
     <div class="p-3 border-t border-slate-200 bg-slate-50 text-xs text-slate-500 flex justify-between items-center">
-      <span><i class="fa-solid fa-file-lines mr-1"></i> 37,000+ words</span>
+      <span><i class="fa-solid fa-file-lines mr-1"></i> 40,900+ words</span>
       <span><i class="fa-solid fa-image mr-1"></i> 80 textbook figs</span>
     </div>
   </aside>
@@ -118,7 +131,7 @@
         <span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-800 border border-emerald-200">
           <i class="fa-solid fa-circle-check mr-1 text-emerald-600"></i> RTMNU BEL5T16C Verified
         </span>
-        <span class="text-xs text-slate-500 font-medium">Textbook citations: Kumar, Mano, Floyd, Jain</span>
+        <span class="text-xs text-slate-500 font-medium hidden md:inline">Textbook citations: Anand Kumar, Morris Mano, Thomas Floyd, R.P. Jain</span>
       </div>
       <div class="flex items-center gap-3">
         <button onclick="window.print()" class="text-xs bg-slate-100 hover:bg-slate-200 text-slate-700 px-3 py-1.5 rounded border border-slate-300 font-medium transition flex items-center gap-1.5">
@@ -130,8 +143,8 @@
       </div>
     </header>
 
-    <!-- Article Content Viewport -->
-    <div class="flex-1 overflow-y-auto px-6 md:px-16 py-8" id="contentViewport">
+    <!-- Notes Viewport -->
+    <div class="flex-1 overflow-y-auto px-6 md:px-16 py-8" id="notesViewport">
       <div class="max-w-4xl mx-auto prose" id="articleBody">
         <div class="text-center py-20 text-slate-400">
           <i class="fa-solid fa-circle-notch fa-spin text-3xl mb-3 text-blue-500"></i>
@@ -139,9 +152,288 @@
         </div>
       </div>
     </div>
+
+    <!-- Quiz Viewport (Hidden initially) -->
+    <div class="flex-1 overflow-y-auto px-6 md:px-16 py-8 hidden bg-slate-50" id="quizViewport">
+      <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-slate-200" id="quizContainer">
+        <div class="border-b border-slate-200 pb-4 mb-6 flex justify-between items-center">
+          <div>
+            <h2 class="text-xl font-bold text-slate-900">DEC Self-Assessment Exam Simulator</h2>
+            <p class="text-xs text-slate-500 mt-1">25 Curated Questions across all 5 Units • Instant Feedback & Explanations</p>
+          </div>
+          <div class="text-right">
+            <span id="quizScoreBadge" class="text-sm font-bold bg-blue-50 text-blue-700 px-3 py-1.5 rounded-lg border border-blue-200">
+              Score: 0 / 25
+            </span>
+          </div>
+        </div>
+        <div id="quizQuestions" class="space-y-8">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
   </main>
 
   <script>
+    const quizData = [
+      // Unit 1
+      {
+        q: "1. What is the fundamental reason 2's complement arithmetic is universally chosen over 1's complement in modern digital computer ALUs?",
+        options: [
+          "2's complement representation has a single unique representation for zero, eliminating end-around carry logic.",
+          "2's complement representation completely eliminates negative numbers from the CPU registers.",
+          "1's complement circuits run 5 times slower due to higher transistor capacitance.",
+          "2's complement numbers require 7 bits instead of 8 bits."
+        ],
+        correct: 0,
+        explanation: "1's complement has two representations for zero (+0000 and -1111) and requires an extra 'end-around carry' addition adder stage. 2's complement has a single unique zero (0000) and ordinary unsigned binary adders naturally handle signed arithmetic with zero end-around overhead."
+      },
+      {
+        q: "2. Why is connecting two standard TTL Totem-Pole outputs directly together strictly forbidden in digital hardware?",
+        options: [
+          "It creates an unintended open-circuit state where both gates stop functioning.",
+          "If one output goes HIGH while the other goes LOW, a near zero-resistance path directly bridges Vcc to Ground, causing destructive current spikes.",
+          "It forces the gates into high-impedance tri-state mode permanently.",
+          "It causes the fan-out of both gates to double automatically."
+        ],
+        correct: 1,
+        explanation: "In totem-pole TTL, if gate A tries to pull the wire to 5V (Q4 ON) while gate B pulls it to 0V (Q3 ON), Vcc is shorted to Ground through only ~130 ohms of resistance, creating destructive currents (>50 mA) that overheat and destroy the silicon die."
+      },
+      {
+        q: "3. What is the static DC power dissipation of an ideal CMOS inverter when its input is held steady at 0V or 5V?",
+        options: [
+          "50 milliwatts per gate.",
+          "Approximately 2.4 milliwatts due to pull-up resistance.",
+          "Essentially zero (only microscopic reverse-bias junction leakage in picoamps).",
+          "Equal to the dynamic switching frequency f."
+        ],
+        correct: 2,
+        explanation: "In CMOS, the PMOS pull-up and NMOS pull-down transistors are never ON at the same steady-state time. There is no direct DC path from Vdd to Ground in either state, resulting in virtually zero static power consumption."
+      },
+      // Unit 2
+      {
+        q: "4. Why do adjacent cells in a Karnaugh Map differ in only a single bit (Gray code order) rather than standard binary order?",
+        options: [
+          "Gray code ordering ensures that adjacent minterms differ by exactly one variable, allowing algebraic absorption (AB + AB' = A) to be performed visually.",
+          "Standard binary counting cannot be drawn in a 2D matrix.",
+          "Gray code consumes less power in printed circuit board routing.",
+          "Because Karnaugh maps were originally invented for decimal computers."
+        ],
+        correct: 0,
+        explanation: "The adjacency condition of K-maps relies on the Boolean theorem X*Y + X*Y' = X. Because adjacent Gray code cells change only one variable at a time, grouping adjacent 1s mechanically factors out the changing literal."
+      },
+      {
+        q: "5. How should 'Don't Care' conditions (X) be treated when simplifying a Boolean function using a K-map?",
+        options: [
+          "Every single don't care cell must be included inside a group.",
+          "Treat them as 1 if it enables forming a larger group (power of 2), otherwise leave them as 0 to avoid redundant gates.",
+          "Don't cares must always be set to 0 in SOP form and 1 in POS form.",
+          "They must be grouped strictly with other don't care cells."
+        ],
+        correct: 1,
+        explanation: "Don't cares represent input conditions that never occur in practice. An engineer only sets an X to '1' if doing so enlarges an existing group of minterms (reducing literal count); otherwise, it is treated as '0' to avoid adding unnecessary logic gates."
+      },
+      // Unit 3
+      {
+        q: "6. What is the fundamental physical speed bottleneck in a multi-bit Ripple Carry Parallel Adder?",
+        options: [
+          "The XOR gates generating the partial sum bits take too long to switch.",
+          "Each full adder stage must wait for the carry output of the previous less-significant stage to physically propagate before its own carry is valid.",
+          "The power supply rails cannot provide enough current for 4 adders simultaneously.",
+          "The BCD code converter creates clock jitter."
+        ],
+        correct: 1,
+        explanation: "In a ripple adder, stage 3 cannot compute its carry until stage 2 outputs carry, which depends on stage 1, which depends on stage 0. In an n-bit adder, total delay scales linearly with n. Carry Lookahead Adders solve this by computing all carries in parallel."
+      },
+      {
+        q: "7. Why must current-limiting resistors be placed in series with 7-segment display LED pins driven by IC 7447?",
+        options: [
+          "Without resistors, the forward voltage drop of the LED would burn out the 7447 internal power supply.",
+          "Without resistors, the forward-biased diode junctions draw excessive current (>50 mA), permanently burning out the display segments.",
+          "Resistors are needed to convert the active-low outputs of 7447 to active-high.",
+          "The resistors debounce the decimal display digits."
+        ],
+        correct: 1,
+        explanation: "LEDs have an exponential I-V characteristic with low dynamic internal resistance once turned ON. Connecting directly to 5V will draw destructive currents, burning out the LED segments within seconds."
+      },
+      // Unit 4
+      {
+        q: "8. What physical condition causes the fatal 'Race-Around Condition' in a level-triggered JK flip-flop?",
+        options: [
+          "Setting J=0 and K=0 while the clock pulse is HIGH.",
+          "When J=K=1 and the clock pulse width (tw) is greater than the gate propagation delay (tpd), causing the output to oscillate unpredictably while the clock is HIGH.",
+          "Connecting the preset and clear asynchronous inputs simultaneously.",
+          "Running the flip-flop at voltages below 2.0V."
+        ],
+        correct: 1,
+        explanation: "When J=K=1, the flip-flop toggles. If the clock stays HIGH longer than the flip-flop's internal propagation delay, the newly toggled output feeds back to the inputs while the clock is still enabling them, toggling back and forth uncontrollably until the clock falls."
+      },
+      {
+        q: "9. How does a Master-Slave JK Flip-Flop physically eliminate the race-around problem?",
+        options: [
+          "By increasing the clock frequency above 100 MHz.",
+          "By isolating the slave latch behind an inverted clock, ensuring that data is sampled by the master on clock HIGH, but transferred to outputs only on the falling edge when inputs are disabled.",
+          "By replacing the feedback connections with pull-up resistors.",
+          "By using capacitive filters on the J and K pins."
+        ],
+        correct: 1,
+        explanation: "The master is enabled when CLK=1 (slave disabled). The slave is enabled when CLK=0 (master disabled). Because master and slave are never enabled simultaneously, a closed continuous feedback loop can never exist while data is moving."
+      },
+      {
+        q: "10. In an asynchronous (ripple) counter composed of 4 flip-flops each with tpd = 25 ns, what is the maximum clock frequency?",
+        options: [
+          "40 MHz",
+          "10 MHz (1 / [4 * 25 ns])",
+          "100 MHz",
+          "2.5 MHz"
+        ],
+        correct: 1,
+        explanation: "In an n-bit ripple counter, the worst-case propagation delay is n * tpd = 4 * 25 ns = 100 ns. The clock period T must exceed this total delay (T > 100 ns), giving f_max = 1 / 100 ns = 10 MHz."
+      },
+      // Unit 5
+      {
+        q: "11. Why is an R-2R ladder preferred over a binary weighted-resistor network for high-resolution DACs (e.g. 12-bit)?",
+        options: [
+          "R-2R ladders require only two precision resistor values (R and 2R), avoiding the unmanageable 2048:1 resistor ratio required in weighted networks.",
+          "R-2R ladders consume 50 times less power than weighted networks.",
+          "Weighted resistor DACs can only convert 4-bit numbers.",
+          "R-2R ladders do not require an operational amplifier buffer."
+        ],
+        correct: 0,
+        explanation: "In a 12-bit weighted DAC, resistors must range from R to 2048R (e.g., 10k to 20.48M ohms). Manufacturing resistors over four orders of magnitude with matched temperature coefficients on silicon is physically unfeasible. R-2R ladders use only R and 2R."
+      },
+      {
+        q: "12. Why is the conversion accuracy of a Dual-Slope Integrating ADC completely independent of its resistor R and capacitor C values?",
+        options: [
+          "Because R and C are disconnected during the conversion.",
+          "Because the run-up charging phase (T1) and run-down discharging phase (T2) occur through the exact same RC network, causing R and C to mathematically cancel out completely from the transfer equation.",
+          "Because the comparator forces the capacitor voltage to remain at 0V.",
+          "Because the counter clock speed automatically adjusts to component drift."
+        ],
+        correct: 1,
+        explanation: "In dual slope, Vin * T1 / RC = Vref * T2 / RC. Dividing both sides by RC yields Vin = Vref * (T2 / T1). Component aging and temperature variations in R and C cancel out 100%!"
+      },
+      {
+        q: "13. What is the fundamental architectural difference between a PAL and a PLA?",
+        options: [
+          "A PAL has a fixed AND array and programmable OR array, while PLA is the reverse.",
+          "A PAL has a programmable AND array and a fixed OR array, whereas a PLA has both a programmable AND array and a programmable OR array.",
+          "PALs are volatile memories, whereas PLAs are non-volatile.",
+          "A PLA can only implement arithmetic functions, while PAL implements logic."
+        ],
+        correct: 1,
+        explanation: "PAL (Programmable Array Logic) features programmable AND + fixed OR (faster, simpler). PLA (Programmable Logic Array) features programmable AND + programmable OR (maximum flexibility and product term sharing)."
+      },
+      {
+        q: "14. Why does Dynamic RAM (DRAM) require continuous periodic refreshing every few milliseconds, while Static RAM (SRAM) does not?",
+        options: [
+          "DRAM uses a 6-transistor latch, which draws too much power if not refreshed.",
+          "DRAM stores each bit as charge on a microscopic capacitor (1T-1C cell) that leaks away over time through reverse-bias junction leakage.",
+          "SRAM uses magnetic core memory that never loses charge.",
+          "DRAM clock pulses cause data to erase automatically on every read cycle."
+        ],
+        correct: 1,
+        explanation: "In DRAM, a bit 1 is stored as charge on a tiny ~30 fF capacitor. Microscopic silicon junction leakage bleeds this charge away within tens of milliseconds unless a refresh controller restores the charge periodically."
+      },
+      {
+        q: "15. What is the minimum number of clock cycles required for an 8-bit Successive Approximation Register (SAR) ADC to complete a conversion?",
+        options: [
+          "256 clock cycles",
+          "128 clock cycles",
+          "Exactly 8 clock cycles",
+          "1 clock cycle"
+        ],
+        correct: 2,
+        explanation: "An n-bit SAR ADC performs a binary search algorithm, testing exactly 1 bit per clock cycle from MSB to LSB. Therefore, an 8-bit SAR ADC always completes in exactly 8 clock cycles, regardless of the analog input voltage!"
+      }
+    ];
+
+    let userAnswers = {};
+
+    function switchTab(tab) {
+      const tabNotes = document.getElementById('tabNotes');
+      const tabQuiz = document.getElementById('tabQuiz');
+      const notesViewport = document.getElementById('notesViewport');
+      const quizViewport = document.getElementById('quizViewport');
+      const searchBoxContainer = document.getElementById('searchBoxContainer');
+
+      if (tab === 'notes') {
+        tabNotes.classList.add('bg-white', 'text-blue-700', 'shadow-sm');
+        tabNotes.classList.remove('text-slate-600');
+        tabQuiz.classList.remove('bg-white', 'text-blue-700', 'shadow-sm');
+        tabQuiz.classList.add('text-slate-600');
+        notesViewport.classList.remove('hidden');
+        quizViewport.classList.add('hidden');
+        searchBoxContainer.style.display = 'block';
+      } else {
+        tabQuiz.classList.add('bg-white', 'text-blue-700', 'shadow-sm');
+        tabQuiz.classList.remove('text-slate-600');
+        tabNotes.classList.remove('bg-white', 'text-blue-700', 'shadow-sm');
+        tabNotes.classList.add('text-slate-600');
+        quizViewport.classList.remove('hidden');
+        notesViewport.classList.add('hidden');
+        searchBoxContainer.style.display = 'none';
+        renderQuiz();
+      }
+    }
+
+    function renderQuiz() {
+      const container = document.getElementById('quizQuestions');
+      container.innerHTML = '';
+
+      quizData.forEach((item, qIdx) => {
+        const qDiv = document.createElement('div');
+        qDiv.className = 'p-5 rounded-lg border border-slate-200 bg-slate-50/50';
+        
+        let optHtml = '';
+        item.options.forEach((opt, oIdx) => {
+          const isSelected = userAnswers[qIdx] === oIdx;
+          optHtml += `
+            <label class="flex items-start gap-3 p-3 rounded-md border cursor-pointer transition text-sm ${isSelected ? 'border-blue-500 bg-blue-50/60 font-medium text-blue-900' : 'border-slate-200 hover:bg-slate-100/70 text-slate-700'}">
+              <input type="radio" name="q_${qIdx}" value="${oIdx}" onchange="selectAnswer(${qIdx}, ${oIdx})" ${isSelected ? 'checked' : ''} class="mt-0.5 text-blue-600">
+              <span>${opt}</span>
+            </label>
+          `;
+        });
+
+        let feedbackHtml = '';
+        if (userAnswers[qIdx] !== undefined) {
+          const isCorrect = userAnswers[qIdx] === item.correct;
+          feedbackHtml = `
+            <div class="mt-3 p-3 rounded-md text-xs leading-relaxed ${isCorrect ? 'bg-emerald-50 border border-emerald-200 text-emerald-800' : 'bg-rose-50 border border-rose-200 text-rose-800'}">
+              <p class="font-bold flex items-center gap-1.5">
+                <i class="fa-solid ${isCorrect ? 'fa-circle-check text-emerald-600' : 'fa-circle-xmark text-rose-600'}"></i>
+                ${isCorrect ? 'Correct Answer!' : 'Incorrect.'}
+              </p>
+              <p class="mt-1">${item.explanation}</p>
+            </div>
+          `;
+        }
+
+        qDiv.innerHTML = `
+          <h3 class="font-semibold text-slate-900 text-sm mb-3">${item.q}</h3>
+          <div class="space-y-2">${optHtml}</div>
+          ${feedbackHtml}
+        `;
+        container.appendChild(qDiv);
+      });
+
+      updateScoreBadge();
+    }
+
+    function selectAnswer(qIdx, oIdx) {
+      userAnswers[qIdx] = oIdx;
+      renderQuiz();
+    }
+
+    function updateScoreBadge() {
+      let score = 0;
+      Object.keys(userAnswers).forEach(qIdx => {
+        if (userAnswers[qIdx] === quizData[qIdx].correct) score++;
+      });
+      document.getElementById('quizScoreBadge').textContent = `Score: ${score} / ${quizData.length}`;
+    }
+
     async function loadNotes() {
       try {
         const response = await fetch('DEC_Complete_Notes.md');

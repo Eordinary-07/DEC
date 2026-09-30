@@ -10,6 +10,7 @@ from section_u3 import get_unit3
 from section_u4 import get_unit4
 from section_u5 import get_unit5
 from section_exam_problems import get_exam_problems
+from section_lab import get_lab_experiments
 from section_appendix import get_appendix
 
 def assemble():
@@ -22,6 +23,7 @@ def assemble():
         get_unit4(),
         get_unit5(),
         get_exam_problems(),
+        get_lab_experiments(),
         get_appendix()
     ]
     
