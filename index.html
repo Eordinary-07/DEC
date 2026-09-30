@@ -17,7 +17,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;700&display=swap');
     body { font-family: 'Inter', sans-serif; }
     code, pre { font-family: 'JetBrains Mono', monospace; }
     
@@ -47,41 +47,42 @@
 
   <!-- Main Navbar -->
   <header class="bg-slate-900 text-white border-b border-slate-800 px-6 py-3 flex items-center justify-between flex-shrink-0 z-20 shadow-md">
-    <div class="flex items-center gap-4">
-      <div class="flex items-center gap-2.5">
-        <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow-sm font-bold text-lg">
-          <i class="fa-solid fa-microchip"></i>
-        </div>
-        <div>
-          <h1 class="font-extrabold text-base leading-tight tracking-tight flex items-center gap-2">
-            Digital Electronics Circuits
-            <span class="bg-blue-500/20 text-blue-300 text-xs px-2 py-0.5 rounded border border-blue-400/30 font-mono">BEL5T16C</span>
-          </h1>
-          <p class="text-xs text-slate-400">RTMNU NEP Curriculum • AICTE Aligned • Zero Prior Background</p>
-        </div>
+    <div class="flex items-center gap-3">
+      <div class="w-9 h-9 rounded-lg bg-blue-600 flex items-center justify-center text-white shadow font-bold text-lg">
+        <i class="fa-solid fa-microchip"></i>
+      </div>
+      <div>
+        <h1 class="font-extrabold text-base leading-tight tracking-tight flex items-center gap-2">
+          Digital Electronics Circuits
+          <span class="bg-blue-500/20 text-blue-300 text-xs px-2 py-0.5 rounded border border-blue-400/30 font-mono">BEL5T16C</span>
+        </h1>
+        <p class="text-xs text-slate-400">RTMNU NEP Curriculum • AICTE Aligned • Zero Background Entry</p>
       </div>
     </div>
 
-    <!-- Center Navigation Tabs -->
+    <!-- Navigation Tabs -->
     <nav class="hidden md:flex items-center gap-1 bg-slate-800 p-1 rounded-lg border border-slate-700 text-xs font-semibold">
       <button onclick="switchTab('downloads')" id="nav-downloads" class="tab-btn px-3 py-1.5 rounded-md bg-blue-600 text-white transition flex items-center gap-1.5 shadow-sm">
         <i class="fa-solid fa-cloud-arrow-down"></i> PDF Downloads
+      </button>
+      <button onclick="switchTab('diagrams')" id="nav-diagrams" class="tab-btn px-3 py-1.5 rounded-md text-slate-300 hover:text-white transition flex items-center gap-1.5">
+        <i class="fa-solid fa-image text-emerald-400"></i> Book Diagrams (80)
       </button>
       <button onclick="switchTab('pdfviewer')" id="nav-pdfviewer" class="tab-btn px-3 py-1.5 rounded-md text-slate-300 hover:text-white transition flex items-center gap-1.5">
         <i class="fa-solid fa-file-pdf text-rose-400"></i> Read PDF Live
       </button>
       <button onclick="switchTab('notes')" id="nav-notes" class="tab-btn px-3 py-1.5 rounded-md text-slate-300 hover:text-white transition flex items-center gap-1.5">
-        <i class="fa-solid fa-book-open text-amber-400"></i> Lecture Notes
+        <i class="fa-solid fa-book-open text-amber-400"></i> Full Notes
       </button>
       <button onclick="switchTab('quiz')" id="nav-quiz" class="tab-btn px-3 py-1.5 rounded-md text-slate-300 hover:text-white transition flex items-center gap-1.5">
-        <i class="fa-solid fa-list-check text-emerald-400"></i> Exam Quiz
+        <i class="fa-solid fa-list-check text-purple-400"></i> Quiz
       </button>
     </nav>
 
     <!-- Top Right Actions -->
     <div class="flex items-center gap-3">
-      <a href="DEC_Complete_Notes.pdf" download="DEC_Complete_Notes_BEL5T16C.pdf" 
-        class="bg-rose-600 hover:bg-rose-500 text-white text-xs font-bold px-4 py-2 rounded-lg transition shadow-md flex items-center gap-2">
+      <a href="DEC_Complete_Notes.pdf?download=1" 
+        class="bg-rose-600 hover:bg-rose-500 text-white text-xs font-extrabold px-4 py-2 rounded-lg transition shadow-md flex items-center gap-2">
         <i class="fa-solid fa-download"></i> Download Master PDF (129 Pages)
       </a>
     </div>
@@ -90,57 +91,56 @@
   <!-- Main Viewports Container -->
   <div class="flex-1 overflow-hidden relative">
 
-    <!-- 1. PDF DOWNLOAD CENTER VIEW (DEFAULT) -->
+    <!-- 1. PDF DOWNLOAD CENTER (DEFAULT VIEW) -->
     <div id="view-downloads" class="h-full overflow-y-auto p-6 md:p-10 max-w-6xl mx-auto space-y-8">
       
-      <!-- Hero Download Card -->
+      <!-- Hero Download Banner -->
       <div class="bg-gradient-to-br from-slate-900 via-blue-950 to-slate-900 text-white rounded-2xl p-8 border border-slate-700 shadow-xl relative overflow-hidden">
-        <div class="absolute -right-10 -bottom-10 opacity-10 text-9xl">
-          <i class="fa-solid fa-microchip"></i>
-        </div>
         <div class="max-w-3xl space-y-4">
           <div class="flex flex-wrap items-center gap-2">
             <span class="bg-blue-500/20 text-blue-300 text-xs px-2.5 py-1 rounded-full font-mono border border-blue-400/30">Course: BEL5T16C</span>
-            <span class="bg-emerald-500/20 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-semibold border border-emerald-400/30">129 Pages Compendium</span>
-            <span class="bg-amber-500/20 text-amber-300 text-xs px-2.5 py-1 rounded-full font-semibold border border-amber-400/30">80 Authentic Book Figures</span>
+            <span class="bg-rose-500/20 text-rose-300 text-xs px-2.5 py-1 rounded-full font-semibold border border-rose-400/30">129 Pages Complete PDF</span>
+            <span class="bg-emerald-500/20 text-emerald-300 text-xs px-2.5 py-1 rounded-full font-semibold border border-emerald-400/30">80 Authentic Book Figures</span>
             <span class="bg-purple-500/20 text-purple-300 text-xs px-2.5 py-1 rounded-full font-semibold border border-purple-400/30">40,900+ Words</span>
           </div>
           <h2 class="text-3xl font-extrabold tracking-tight text-white leading-tight">
             Complete Digital Electronics Course Compendium
           </h2>
           <p class="text-slate-300 text-sm leading-relaxed">
-            Exhaustive first-principles notes synthesized strictly from authorized textbooks: <strong>A. Anand Kumar</strong>, <strong>M. Morris Mano</strong>, <strong>Thomas L. Floyd</strong>, and <strong>R. P. Jain</strong>. Features hardware reality checks, mathematical derivations, university exam problems, and a 10-experiment practical laboratory manual.
+            Exhaustive first-principles lecture notes synthesized strictly from authorized textbooks: <strong>A. Anand Kumar</strong>, <strong>M. Morris Mano</strong>, <strong>Thomas L. Floyd</strong>, and <strong>R. P. Jain</strong>. Features hardware reality checks, mathematical derivations, university exam problems, and a 10-experiment practical laboratory manual.
           </p>
           <div class="pt-2 flex flex-wrap items-center gap-4">
-            <a href="DEC_Complete_Notes.pdf" download="DEC_Complete_Notes_BEL5T16C.pdf" 
+            <a href="DEC_Complete_Notes.pdf?download=1" 
               class="bg-rose-600 hover:bg-rose-500 text-white font-extrabold px-6 py-3.5 rounded-xl transition shadow-lg flex items-center gap-3 text-base">
-              <i class="fa-solid fa-cloud-arrow-down text-lg"></i> Download Master PDF (7.35 MB)
+              <i class="fa-solid fa-cloud-arrow-down text-lg animate-bounce"></i> Download Master PDF (7.35 MB)
             </a>
             <button onclick="switchTab('pdfviewer')" 
               class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-5 py-3.5 rounded-xl border border-slate-600 transition flex items-center gap-2 text-sm">
               <i class="fa-solid fa-eye text-blue-400"></i> Read in Browser
             </button>
-            <a href="DEC_Complete_Notes.md" download 
-              class="bg-slate-800 hover:bg-slate-700 text-slate-300 font-medium px-4 py-3.5 rounded-xl border border-slate-600 transition flex items-center gap-2 text-sm">
-              <i class="fa-solid fa-code"></i> Raw Markdown
-            </a>
+            <button onclick="switchTab('diagrams')" 
+              class="bg-slate-800 hover:bg-slate-700 text-white font-semibold px-5 py-3.5 rounded-xl border border-slate-600 transition flex items-center gap-2 text-sm">
+              <i class="fa-solid fa-image text-emerald-400"></i> Browse 80 Book Figures
+            </button>
           </div>
         </div>
       </div>
 
-      <!-- Unit-Wise Download Section -->
+      <!-- Unit-by-Unit Modular PDF Downloads -->
       <div>
         <div class="border-b border-slate-200 pb-3 mb-6 flex items-center justify-between">
           <div>
             <h3 class="text-xl font-bold text-slate-900">Unit-by-Unit Modular PDF Downloads</h3>
-            <p class="text-xs text-slate-500 mt-0.5">Download individual modular PDF files tailored for specific unit exams and laboratory sessions</p>
+            <p class="text-xs text-slate-500 mt-0.5">Download modular PDF files customized for specific unit preparation and laboratory experiments</p>
           </div>
-          <span class="text-xs font-semibold text-slate-400">All 5 Units Available</span>
+          <span class="text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded border border-emerald-200">
+            <i class="fa-solid fa-check mr-1"></i> All Files Ready
+          </span>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           
-          <!-- Unit I Card -->
+          <!-- Unit I -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-3">
@@ -152,13 +152,13 @@
                 Radix math, signed 2's complement arithmetic, codes (BCD, Excess-3, Gray), basic/universal gates, RTL, TTL (Totem-Pole, Open-Collector, Tristate), CMOS, and TTL-CMOS interfacing.
               </p>
             </div>
-            <a href="DEC_Unit1_Fundamentals_and_Logic_Families.pdf" download 
+            <a href="DEC_Unit1_Fundamentals_and_Logic_Families.pdf?download=1" 
               class="w-full text-center bg-indigo-50 hover:bg-indigo-600 hover:text-white text-indigo-700 font-bold py-2 rounded-lg border border-indigo-200 hover:border-transparent transition text-xs flex items-center justify-center gap-2">
               <i class="fa-solid fa-download"></i> Download Unit I PDF
             </a>
           </div>
 
-          <!-- Unit II Card -->
+          <!-- Unit II -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-3">
@@ -170,13 +170,13 @@
                 Boolean postulates & theorems, canonical minterms/maxterms, SOP/POS forms, Karnaugh Maps up to 4 variables, Prime Implicants, and Don't-Care conditions.
               </p>
             </div>
-            <a href="DEC_Unit2_Logic_Function_and_Minimization.pdf" download 
+            <a href="DEC_Unit2_Logic_Function_and_Minimization.pdf?download=1" 
               class="w-full text-center bg-cyan-50 hover:bg-cyan-600 hover:text-white text-cyan-700 font-bold py-2 rounded-lg border border-cyan-200 hover:border-transparent transition text-xs flex items-center justify-center gap-2">
               <i class="fa-solid fa-download"></i> Download Unit II PDF
             </a>
           </div>
 
-          <!-- Unit III Card -->
+          <!-- Unit III -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-3">
@@ -188,13 +188,13 @@
                 Half/Full Adders & Subtractors, 4-bit parallel adder/subtractor, Carry Lookahead Adder (CLA), Code Converters, Multiplexers, 74138 Decoder, 74148 Priority Encoder, 7-Segment drivers.
               </p>
             </div>
-            <a href="DEC_Unit3_Combinational_Digital_Circuits.pdf" download 
+            <a href="DEC_Unit3_Combinational_Digital_Circuits.pdf?download=1" 
               class="w-full text-center bg-emerald-50 hover:bg-emerald-600 hover:text-white text-emerald-700 font-bold py-2 rounded-lg border border-emerald-200 hover:border-transparent transition text-xs flex items-center justify-center gap-2">
               <i class="fa-solid fa-download"></i> Download Unit III PDF
             </a>
           </div>
 
-          <!-- Unit IV Card -->
+          <!-- Unit IV -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-3">
@@ -206,13 +206,13 @@
                 1-bit memory latches, clocked SR/JK/D/T flip-flops, race-around physical flaw, Master-Slave JK, excitation tables, conversions, shift registers, ripple & synchronous counters, traffic light controller.
               </p>
             </div>
-            <a href="DEC_Unit4_Sequential_Circuits_and_Systems.pdf" download 
+            <a href="DEC_Unit4_Sequential_Circuits_and_Systems.pdf?download=1" 
               class="w-full text-center bg-rose-50 hover:bg-rose-600 hover:text-white text-rose-700 font-bold py-2 rounded-lg border border-rose-200 hover:border-transparent transition text-xs flex items-center justify-center gap-2">
               <i class="fa-solid fa-download"></i> Download Unit IV PDF
             </a>
           </div>
 
-          <!-- Unit V Card -->
+          <!-- Unit V -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-3">
@@ -224,13 +224,13 @@
                 Weighted resistor & R-2R ladder DACs (DAC0808), Counter/SAR/Dual-Slope ADCs (ADC0801), Memory organization (2^k × m), SRAM vs DRAM, ROM families, PLDs (PROM, PAL, PLA).
               </p>
             </div>
-            <a href="DEC_Unit5_Converters_and_Semiconductor_Memories.pdf" download 
+            <a href="DEC_Unit5_Converters_and_Semiconductor_Memories.pdf?download=1" 
               class="w-full text-center bg-purple-50 hover:bg-purple-600 hover:text-white text-purple-700 font-bold py-2 rounded-lg border border-purple-200 hover:border-transparent transition text-xs flex items-center justify-center gap-2">
               <i class="fa-solid fa-download"></i> Download Unit V PDF
             </a>
           </div>
 
-          <!-- Lab & Exam Compendium Card -->
+          <!-- Lab & Exam Compendium -->
           <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
             <div>
               <div class="flex items-center justify-between mb-3">
@@ -242,7 +242,7 @@
                 10 complete standardized lab worksheets with TTL pinouts, breadboard wiring, observation tables, viva-voce technical Q&As, and step-by-step solved university exam numericals.
               </p>
             </div>
-            <a href="DEC_Lab_Manual_and_Exam_Compendium.pdf" download 
+            <a href="DEC_Lab_Manual_and_Exam_Compendium.pdf?download=1" 
               class="w-full text-center bg-amber-50 hover:bg-amber-600 hover:text-white text-amber-700 font-bold py-2 rounded-lg border border-amber-200 hover:border-transparent transition text-xs flex items-center justify-center gap-2">
               <i class="fa-solid fa-download"></i> Download Lab & Exam PDF
             </a>
@@ -253,22 +253,120 @@
 
     </div>
 
-    <!-- 2. LIVE PDF VIEWER -->
+    <!-- 2. AUTHENTIC BOOK DIAGRAM EXPLORER -->
+    <div id="view-diagrams" class="h-full overflow-y-auto p-6 md:p-10 max-w-6xl mx-auto space-y-8 hidden">
+      <div class="border-b border-slate-200 pb-4">
+        <h2 class="text-2xl font-extrabold text-slate-900">Authentic Textbook Diagrams & Physical Walkthroughs</h2>
+        <p class="text-xs text-slate-500 mt-1">
+          Strictly sourced from <em>A. Anand Kumar</em>, <em>M. Morris Mano</em>, <em>Thomas L. Floyd</em>, and <em>R. P. Jain</em>. Every diagram is paired with its physical wire & internal node signal walkthrough.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Diagram 1 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">UNIT I • Kumar Ch. 4, Fig. 4.2 (p. 165)</span>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm mb-2">Standard TTL NAND Gate with Totem-Pole Output</h4>
+          <div class="bg-slate-50 border border-slate-200 rounded p-2 mb-3">
+            <img src="images/fig_u1_ttl_nand_totem_pole.png" alt="TTL Totem-Pole NAND" class="max-h-56 mx-auto object-contain">
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 rounded border border-slate-100">
+            <strong>Hardware Explanation:</strong> Multi-emitter BJT $Q_1$ performs input logic. When all inputs are HIGH, current enters base of phase-splitter $Q_2$, saturating it. This pulls the base of pull-up $Q_4$ LOW while driving pull-down $Q_3$ ON, snapping the physical output wire to $V_{OL} \approx 0.2\text{ V}$. Diode $D_1$ prevents $Q_4$ and $Q_3$ from conducting simultaneously.
+          </p>
+        </div>
+
+        <!-- Diagram 2 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs font-bold text-blue-600 bg-blue-50 px-2 py-0.5 rounded">UNIT I • Kumar Ch. 4, Fig. 4.31 (p. 195)</span>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm mb-2">CMOS 2-Input NAND Gate Circuit</h4>
+          <div class="bg-slate-50 border border-slate-200 rounded p-2 mb-3">
+            <img src="images/fig_u1_cmos_nand.png" alt="CMOS NAND" class="max-h-56 mx-auto object-contain">
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 rounded border border-slate-100">
+            <strong>Hardware Explanation:</strong> Two PMOS transistors ($Q_1, Q_2$) are in parallel between $V_{DD}$ and output, while two NMOS transistors ($Q_3, Q_4$) are in series to Ground. If either input is LOW, at least one PMOS turns ON and NMOS is cut off, holding output at $5.0\text{ V}$ with zero static DC current.
+          </p>
+        </div>
+
+        <!-- Diagram 3 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs font-bold text-emerald-600 bg-emerald-50 px-2 py-0.5 rounded">UNIT III • Kumar Ch. 6, Fig. 6.8 (p. 327)</span>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm mb-2">4-Bit Parallel Binary Adder/Subtractor with Controlled Inverters</h4>
+          <div class="bg-slate-50 border border-slate-200 rounded p-2 mb-3">
+            <img src="images/fig_u3_parallel_adder_subtractor.png" alt="Parallel Adder/Subtractor" class="max-h-56 mx-auto object-contain">
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 rounded border border-slate-100">
+            <strong>Hardware Explanation:</strong> The mode signal $M$ controls XOR gates: when $M=0$, $B \oplus 0 = B$ and $C_0=0$ (true addition $A+B$). When $M=1$, $B \oplus 1 = \overline{B}$ and $C_0=1$ (2's complement subtraction $A + \overline{B} + 1 = A - B$) using identical full adder hardware.
+          </p>
+        </div>
+
+        <!-- Diagram 4 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs font-bold text-rose-600 bg-rose-50 px-2 py-0.5 rounded">UNIT IV • Kumar Ch. 10, Fig. 10.12 (p. 565)</span>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm mb-2">Master-Slave JK Flip-Flop Circuit</h4>
+          <div class="bg-slate-50 border border-slate-200 rounded p-2 mb-3">
+            <img src="images/fig_u4_master_slave_jk.png" alt="Master-Slave JK" class="max-h-56 mx-auto object-contain">
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 rounded border border-slate-100">
+            <strong>Hardware Explanation:</strong> When CLK is HIGH, the master latch samples inputs $J$ and $K$ while the slave is disabled. When CLK transitions LOW, master inputs disable and the inverter enables the slave latch to transfer state to output $Q$. Feedback oscillation is physically impossible.
+          </p>
+        </div>
+
+        <!-- Diagram 5 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded">UNIT V • Kumar Ch. 17, Fig. 17.5 (p. 947)</span>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm mb-2">R-2R Ladder Digital-to-Analog Converter</h4>
+          <div class="bg-slate-50 border border-slate-200 rounded p-2 mb-3">
+            <img src="images/fig_u5_r2r_ladder_dac.png" alt="R-2R Ladder DAC" class="max-h-56 mx-auto object-contain">
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 rounded border border-slate-100">
+            <strong>Hardware Explanation:</strong> Looking into any ladder node to the left, equivalent resistance is always $R$. Current arriving at each node splits exactly $50\% / 50\%$, generating binary weighted currents $I/2, I/4, I/8, I/16$ into the op-amp summing bus using only TWO resistor values ($R$ and $2R$).
+          </p>
+        </div>
+
+        <!-- Diagram 6 -->
+        <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm">
+          <div class="flex justify-between items-center mb-2">
+            <span class="text-xs font-bold text-purple-600 bg-purple-50 px-2 py-0.5 rounded">UNIT V • Kumar Ch. 17, Fig. 17.23 (p. 964)</span>
+          </div>
+          <h4 class="font-bold text-slate-900 text-sm mb-2">Dual-Slope Integrating ADC Architecture</h4>
+          <div class="bg-slate-50 border border-slate-200 rounded p-2 mb-3">
+            <img src="images/fig_u5_dual_slope_adc.png" alt="Dual-Slope ADC" class="max-h-56 mx-auto object-contain">
+          </div>
+          <p class="text-xs text-slate-700 leading-relaxed bg-slate-50 p-3 rounded border border-slate-100">
+            <strong>Hardware Explanation:</strong> Integrates $V_{in}$ for fixed time $T_1$, then de-integrates reference $-V_{ref}$ for variable time $T_2$. Because both phases share the same $RC$ network, $R$ and $C$ cancel out: $V_{in} = V_{ref}(T_2 / T_1)$, making measurement independent of component tolerances.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 3. LIVE PDF VIEWER -->
     <div id="view-pdfviewer" class="h-full w-full hidden flex flex-col bg-slate-900">
       <div class="p-3 bg-slate-800 text-white flex items-center justify-between text-xs px-6 border-b border-slate-700">
         <span class="font-semibold text-slate-300 flex items-center gap-2">
-          <i class="fa-solid fa-file-pdf text-rose-400"></i> Viewing: DEC_Complete_Notes.pdf (129 Pages)
+          <i class="fa-solid fa-file-pdf text-rose-400"></i> Reading: DEC_Complete_Notes.pdf (129 Pages • 7.35 MB)
         </span>
         <div class="flex items-center gap-3">
-          <a href="DEC_Complete_Notes.pdf" download class="bg-rose-600 hover:bg-rose-500 text-white px-3 py-1.5 rounded font-bold transition flex items-center gap-1.5">
-            <i class="fa-solid fa-download"></i> Download
+          <a href="DEC_Complete_Notes.pdf?download=1" class="bg-rose-600 hover:bg-rose-500 text-white px-3 py-1.5 rounded font-bold transition flex items-center gap-1.5">
+            <i class="fa-solid fa-download"></i> Save to Computer
           </a>
         </div>
       </div>
-      <iframe src="DEC_Complete_Notes.pdf#toolbar=1" class="w-full flex-1 border-0" id="pdfIframe"></iframe>
+      <iframe src="DEC_Complete_Notes.pdf?view=1#toolbar=1" class="w-full flex-1 border-0" id="pdfIframe"></iframe>
     </div>
 
-    <!-- 3. LECTURE NOTES VIEW -->
+    <!-- 4. LECTURE NOTES VIEW -->
     <div id="view-notes" class="h-full overflow-y-auto px-6 md:px-16 py-8 hidden bg-white">
       <div class="max-w-4xl mx-auto prose" id="articleBody">
         <div class="text-center py-20 text-slate-400">
@@ -278,13 +376,13 @@
       </div>
     </div>
 
-    <!-- 4. EXAM QUIZ VIEW -->
+    <!-- 5. EXAM QUIZ VIEW -->
     <div id="view-quiz" class="h-full overflow-y-auto p-6 md:p-10 hidden bg-slate-50">
       <div class="max-w-3xl mx-auto bg-white p-8 rounded-xl shadow-sm border border-slate-200">
         <div class="border-b border-slate-200 pb-4 mb-6 flex justify-between items-center">
           <div>
             <h2 class="text-xl font-bold text-slate-900">DEC Self-Assessment Exam Simulator</h2>
-            <p class="text-xs text-slate-500 mt-1">25 Curated Questions across all 5 Units • Instant Feedback & Explanations</p>
+            <p class="text-xs text-slate-500 mt-1">15 Core Conceptual & Numerical Questions • Instant Feedback & Explanations</p>
           </div>
           <span id="quizScoreBadge" class="text-sm font-bold bg-blue-50 text-blue-700 px-3.5 py-1.5 rounded-lg border border-blue-200">
             Score: 0 / 15
@@ -298,9 +396,9 @@
 
   <script>
     function switchTab(tabId) {
-      // Hide all views
-      ['downloads', 'pdfviewer', 'notes', 'quiz'].forEach(id => {
-        document.getElementById('view-' + id).classList.add('hidden');
+      ['downloads', 'diagrams', 'pdfviewer', 'notes', 'quiz'].forEach(id => {
+        const view = document.getElementById('view-' + id);
+        if (view) view.classList.add('hidden');
         const btn = document.getElementById('nav-' + id);
         if (btn) {
           btn.classList.remove('bg-blue-600', 'text-white', 'shadow-sm');
@@ -308,8 +406,9 @@
         }
       });
 
-      // Show selected view
-      document.getElementById('view-' + tabId).classList.remove('hidden');
+      const selectedView = document.getElementById('view-' + tabId);
+      if (selectedView) selectedView.classList.remove('hidden');
+      
       const activeBtn = document.getElementById('nav-' + tabId);
       if (activeBtn) {
         activeBtn.classList.add('bg-blue-600', 'text-white', 'shadow-sm');
